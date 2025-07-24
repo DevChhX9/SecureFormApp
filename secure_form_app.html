@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureFormApp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-4">SecureFormApp – Compliance Testing Demo</h1>
+
+    <!-- Login Form -->
+    <div class="card mb-4">
+      <div class="card-header">Login</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3">
+            <label for="2fa" class="form-label">2FA Code</label>
+            <input type="text" class="form-control" id="2fa" placeholder="123456">
+          </div>
+          <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <select class="form-select" id="role">
+              <option>User</option>
+              <option>Admin</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- My Data Page -->
+    <div class="card mb-4">
+      <div class="card-header">My Data</div>
+      <div class="card-body">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <button class="btn btn-danger">Delete My Data</button>
+      </div>
+    </div>
+
+    <!-- Payment Form -->
+    <div class="card">
+      <div class="card-header">Payment Information</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="cc" class="form-label">Credit Card Number</label>
+            <input type="text" class="form-control" id="cc" placeholder="**** **** **** 1234">
+          </div>
+          <div class="mb-3">
+            <label for="exp" class="form-label">Expiration Date</label>
+            <input type="text" class="form-control" id="exp" placeholder="MM/YY">
+          </div>
+          <div class="mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv" placeholder="123">
+          </div>
+          <button type="submit" class="btn btn-success">Submit Payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
