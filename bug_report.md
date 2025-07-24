@@ -1,6 +1,6 @@
-# 🐞 BugReport.md – Sample Issues Found During Compliance QA
+#  BugReport.md – Sample Issues Found During Compliance QA
 
-## 🧪 BR01: 2FA Field Accepts Non-Numeric Input
+## BR01: 2FA Field Accepts Non-Numeric Input
 - **Page:** Login
 - **Severity:** Medium
 - **Steps to Reproduce:**
@@ -10,7 +10,7 @@
 - **Expected Result:** Should reject non-numeric values
 - **Actual Result:** Accepts input without warning
 
-## 🧪 BR02: Credit Card Field Accepts Full Unmasked Numbers
+## BR02: Credit Card Field Accepts Full Unmasked Numbers
 - **Page:** Payment Form
 - **Severity:** High (PCI Non-compliance)
 - **Steps to Reproduce:**
@@ -19,7 +19,7 @@
 - **Expected Result:** Input should auto-mask all but last 4 digits
 - **Actual Result:** All digits are shown
 
-## 🧪 BR03: "Delete My Data" Button Does Not Clear Fields
+##  BR03: "Delete My Data" Button Does Not Clear Fields
 - **Page:** My Data Page
 - **Severity:** Low
 - **Steps to Reproduce:**
